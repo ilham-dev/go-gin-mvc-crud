@@ -1,5 +1,5 @@
-hash: 7e746837f7c779b18b9771392a8047650706dded8b73130badf22636abfe942a
-updated: 2018-12-19T19:04:23.969457+08:00
+hash: 7a061bf01ae71791bb9651bd3851104c5ab7c0c29baf319ece72547bff2916f9
+updated: 2018-12-20T12:07:12.477907+08:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
@@ -9,12 +9,16 @@ imports:
   - binding
   - json
   - render
+- name: github.com/go-sql-driver/mysql
+  version: c45f530f8e7fe40f4687eaa50d0c8c5f1b66f9e0
 - name: github.com/golang/protobuf
   version: 1d3f30b51784bec5aad268e59fd3c2fc1c2fe73f
   subpackages:
   - proto
 - name: github.com/jinzhu/gorm
   version: 472c70caa40267cb89fd8facb07fe6454b578626
+  subpackages:
+  - dialects/mysql
 - name: github.com/jinzhu/inflection
   version: 04140366298a54a039076d798123ffa108fff46c
 - name: github.com/json-iterator/go
@@ -29,10 +33,19 @@ imports:
   version: 772ced7fd4c2f6322c07537a9a93b68d74551fa6
   subpackages:
   - codec
+- name: golang.org/x/crypto
+  version: 505ab145d0a99da450461ae2c1a9f6cd10d1f447
+  subpackages:
+  - bcrypt
+  - blowfish
 - name: golang.org/x/sys
   version: 074acd46bca67915925527c07849494d115e7c43
   subpackages:
   - unix
+- name: google.golang.org/appengine
+  version: e9657d882bb81064595ca3b56cbe2546bbabf7b1
+  subpackages:
+  - cloudsql
 - name: gopkg.in/go-playground/validator.v8
   version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
 - name: gopkg.in/yaml.v2
