@@ -1,0 +1,6 @@
+package: ilham
+import:
+- package: github.com/gin-gonic/gin
+  version: v1.3.0
+- package: github.com/jinzhu/gorm
+  version: v1.9.2
